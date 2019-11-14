@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="zhendong_dbDataSet" targetNamespace="http://tempuri.org/zhendong_dbDataSet.xsd" xmlns:mstns="http://tempuri.org/zhendong_dbDataSet.xsd" xmlns="http://tempuri.org/zhendong_dbDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="zhendong_db_for_Form2" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="zhendong_db_for_Form2 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Fengji.Properties.Settings.GlobalReference.Default.zhendong_db_for_Form2" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="zdTableAdapter" GeneratorDataComponentClassName="zdTableAdapter" Name="zd" UserDataComponentName="zdTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="zhendong_db_for_Form2 (Settings)" DbObjectName="zhendong_db.zd" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `MAC`, `horizontal_vibration`, `vertical_vibration`, `date` FROM `zd`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="zhendong_dbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="zhendong_dbDataSet" msprop:Generator_UserDSName="zhendong_dbDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="zd" msprop:Generator_TableClassName="zdDataTable" msprop:Generator_TableVarName="tablezd" msprop:Generator_TablePropName="zd" msprop:Generator_RowDeletingName="zdRowDeleting" msprop:Generator_RowChangingName="zdRowChanging" msprop:Generator_RowEvHandlerName="zdRowChangeEventHandler" msprop:Generator_RowDeletedName="zdRowDeleted" msprop:Generator_UserTableName="zd" msprop:Generator_RowChangedName="zdRowChanged" msprop:Generator_RowEvArgName="zdRowChangeEvent" msprop:Generator_RowClassName="zdRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
